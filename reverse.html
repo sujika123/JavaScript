@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="text" id="c">
+        <button onclick="abc()">Click</button>
+        <input type="text" name="" id="b">
+    </body>
+     <script>
+        function abc() {
+            var n,a,m=0;
+            n=Number(document.getElementById('c').value);
+            while(n>0) {
+                a=n % 10;
+                m=m * 10 + a;
+                n=parseInt(n/10);
+            }
+            
+            document.getElementById('b').value=m;
+        }
+
+
+ 
+     </script>
+
+</html>

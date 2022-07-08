@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MULTIPLICATION OF 3 NUMBERS</title>
+    </head>
+        
+    <body>
+        <input type="text" id="a"><br><br>
+        <input type="text" id="b"><br><br>
+        <input type="text" id="f"><br><br>
+        <button onclick="abc()">MUL</button><br><br>
+        <input type="text" name="" id="d">
+        
+    </body>
+    <script>
+        function abc() {
+            var x,y,z,c;
+            x=Number(document.getElementById('a').value);
+            y=Number(document.getElementById('b').value);
+            z=Number(document.getElementById('f').value);
+            c=x*y*z;
+            document.getElementById('d').value=c;   
+            
+        }
+    </script>
+</html>

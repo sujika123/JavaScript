@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Number pattern using Java Script</h2>
+    <p id="demo"></p>
+</body>
+<script>
+  let n=5; //height of pattern
+  let string = "";
+  for(let i = 1; i <= n; i++)
+  {
+    for(let j = 1; j <= i; j++)
+    {
+         string += "*";
+    }
+         string += "<br>";
+  }
+  document.getElementById("demo").innerHTML=string;
+
+</script>
+</html>

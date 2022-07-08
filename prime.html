@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    
+    <body>
+        <input type="text" id="a">
+        <button onclick="abc()">Click</button>
+    </body>
+    <script>
+        function abc() {
+            var x,i,f=0;
+            x=Number(document.getElementById('a').value);
+            if(x==0 || x==1) {
+                alert("Not prime number");
+            }
+            for(i=2;i<=x-1;i++){
+             if(x%i==0) {
+                f=1;
+                break;
+             }
+            }
+            if(f==0) {
+                alert("Prime number");
+            }
+            else{
+                alert("Not prime number");
+            }
+
+        }
+    </script>
+</html>

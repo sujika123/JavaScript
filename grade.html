@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="text" id="v"><br><br>
+        <button onclick="check()">click</button>
+    </body>
+    <script>
+        function check() {
+            var a;
+            a=Number(document.getElementById('v').value);
+            if(a<10){
+                alert("Failed");
+            }
+            
+            else if(a>=10 && a<20){
+                alert("Grade: D");
+            }
+            else if(a>=20 && a<30){
+                alert("Grade: C");
+            }
+            else if(a>=30 && a<40){
+                alert("Grade: B");
+
+            }
+            else if(a>=40 && a<=50) {
+                alert("Grade: A")
+            }
+            else {
+                alert("Invalid number");
+            }
+        }
+    </script>
+</html>

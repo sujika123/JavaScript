@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <input type="text" id="a"><br><br>
+    <button onclick="abc()">Factorial</button><br><br>
+    <input type="text" name="" id="b">
+
+    </body>
+    <script>
+        function abc() {
+            var f=1,c;
+            c=Number(document.getElementById('a').value);
+            for(i=1;i<=c;i++) {
+                f=f*i;
+                
+            }
+            document.getElementById('b').value=f;
+        }
+    </script>
+
+</html>

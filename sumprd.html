@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SumPrd</title>
+    </head>
+        
+    <body>
+        <input type="text" id="a"><br><br>
+        <input type="text" id="b"><br><br>
+        <button onclick="abc()">Click</button><br><br>
+       Sum= <input type="text" name="" id="d">&nbsp;
+       Product= <input type="text" name="" id="f"><br><br>
+       <button onclick="xyz()">click</button>
+        
+    </body>
+    <script>
+        function abc() {
+            var x,y,c,w,z;
+            x=Number(document.getElementById('a').value);
+            y=Number(document.getElementById('b').value);
+            c=x+y;
+            document.getElementById('d').value=c;  
+            z=x*y; 
+            document.getElementById('f').value=z;             
+            
+        }
+
+        function xyz() {
+            var z,c;
+            c=document.getElementById('d').value;
+            z= document.getElementById('f').value;
+            w=z-c;
+            
+            alert("button clicked   value(product-sum)="+w); 
+        }
+    </script>
+     
+</html>

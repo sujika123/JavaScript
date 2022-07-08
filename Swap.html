@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SWAP</title>
+    </head>
+        
+    <body>
+      a=  <input type="text" id="a"><br><br>
+      b=   <input type="text" id="b"><br><br>
+        <button onclick="abc()">SWAP</button><br><br>
+      a=  <input type="text" name="" id="d">&nbsp;&nbsp;
+      b=  <input type="text" name="" id="f">
+          
+    </body>
+    <script>
+        function abc() {
+            var x,y,t;
+            x=Number(document.getElementById('a').value);
+            y=Number(document.getElementById('b').value);
+            t=x;
+            x=y;
+            y=t;
+            document.getElementById('d').value=x;   
+            document.getElementById('f').value=y;   
+            
+        } 
+            
+        
+    </script>   
+            
+</html>

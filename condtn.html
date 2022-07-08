@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="text" id="a"><br><br>
+        <button onclick="check()">click</button>
+    </body>
+    <script>
+        function check() {
+            var a;
+            a=Number(document.getElementById('a').value);
+            if(a<=10) {
+                alert("value less than or equal to 10");
+            }
+            else {
+                alert("value greater than 10");
+            }
+        }
+    </script>
+</html>

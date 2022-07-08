@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ADD</title>
+    </head>
+        
+    <body>
+        <input type="text" id="a"><br><br>
+        <input type="text" id="b"><br><br>
+        <button onclick="abc()">ADD</button><br><br>
+        <input type="text" name="" id="d">
+        
+    </body>
+    <script>
+        function abc() {
+            var x,y,c;
+            x=Number(document.getElementById('a').value);
+            y=Number(document.getElementById('b').value);
+            c=x+y;
+            document.getElementById('d').value=c;   
+            
+        }
+    </script>
+</html>
